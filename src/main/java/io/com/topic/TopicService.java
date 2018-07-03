@@ -1,5 +1,6 @@
 package io.com.topic;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -10,33 +11,28 @@ import java.util.List;
 @Service
 public class TopicService {
 
-    private List<Topic> topics = new ArrayList<>(Arrays.asList(
-            new Topic("pepe", "pepe pablo", "pepe is good person"),
-            new Topic("Emmanuel", "Fausto Emmanuel", "Emmanuel es la maldita para"),
-            new Topic("clore", "pepe pablo", "pepe is good person")
-    ));
+    @Autowired
+    private TopicRepository topicRepository;
 
     public List<Topic> getAllTopics() {
-        return topics;
+        List<Topic> list = new ArrayList<>();
+        topicRepository.findAll().forEach(list::add);
+        return list;
     }
 
     public Topic getTopic(String id) {
-        return topics.stream().filter(tp -> tp.getId().equals(id)).findFirst().get();
+        return topicRepository.findOne(id);
     }
 
     public void addTopic(Topic topic) {
-        topics.add(topic);
+        topicRepository.save(topic);
     }
 
     public void updateTopic(String id, Topic topic) {
-        for (Topic to : topics) {
-            if (to.getId().equals(id)) {
-                topics.set(topics.indexOf(to), topic);
-            }
-        }
+        topicRepository.save(topic);
     }
 
     public void deleteTopic(String id) {
-        topics.removeIf(to -> to.getId().equals(id));
+        topicRepository.delete(id);
     }
 }
