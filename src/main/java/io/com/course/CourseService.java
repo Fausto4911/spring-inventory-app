@@ -20,6 +20,7 @@ public class CourseService {
     }
 
     public Course getCourse(String id) {
+        System.out.println("================= u' lala ===========");
         return courseRepository.findOne(id);
     }
 

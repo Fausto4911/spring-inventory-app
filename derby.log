@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Mon Jul 02 21:58:23 AST 2018:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0164-5ddc-b832-00000d10d570 
-on database directory memory:/home/fausto/Documents/courseapi/testdb with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Thu Jul 05 10:41:29 AST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0164-6ae4-13ce-000008f25298 
+on database directory memory:/home/fausto/Documents/springboot/spring-inventory-app/testdb with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
 Loaded from file:/home/fausto/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_172-b11
-user.dir=/home/fausto/Documents/courseapi
+java.runtime.version=1.8.0_161-b12
+user.dir=/home/fausto/Documents/springboot/spring-inventory-app
 os.name=Linux
 os.arch=amd64
-os.version=4.16.11-300.fc28.x86_64
+os.version=4.10.0-32-generic
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
