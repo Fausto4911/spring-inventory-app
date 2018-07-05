@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Thu Jul 05 10:41:29 AST 2018:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0164-6ae4-13ce-000008f25298 
+Thu Jul 05 12:21:51 AST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0164-6b3f-f76c-000007df3c38 
 on database directory memory:/home/fausto/Documents/springboot/spring-inventory-app/testdb with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
 Loaded from file:/home/fausto/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
 java.vendor=Oracle Corporation
